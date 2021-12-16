@@ -51,3 +51,17 @@ team.members.map((member) => {
 })
 
 console.log(team.getName())
+
+//arrow functions
+
+const team = {
+	members: ['Luiz', 'Alexandre', 'Diego'],
+  teamName: 'Masters',
+  teamSummary: function (){
+  	return this.members.map( (member) => {
+    	return `${member} is on team ${this.teamName}`
+    });
+  }
+};
+
+console.log(team.teamSummary())
