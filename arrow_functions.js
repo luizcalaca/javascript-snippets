@@ -33,3 +33,21 @@ const add = (a,b) => {
 }
 
 console.log(add(5,6))
+
+/*
+arrow functions
+*/
+
+var team = {
+	members: ['Louis','Marx'],
+  teamName: 'Masters',
+  getName(){
+  	return this.teamName
+  },
+}
+
+team.members.map((member) => {
+	console.log(member)
+})
+
+console.log(team.getName())
