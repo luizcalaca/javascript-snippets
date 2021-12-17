@@ -40,3 +40,17 @@ url = 'https://jsonplaceholder.typicode.com/posts/'
 fetch(url)
   .then(data => console.log(data))
   .catch(error => console.log(error))
+
+/* 
+
+*/
+
+promise = new Promise((resolve, reject) => {
+  setTimeOut(() => {
+    resolve()
+  }, 3000)
+})
+
+promise.then(()=>{
+  console.log('finally finished!')
+}).catch(error => console.log(error))
