@@ -30,3 +30,13 @@ promise.then(()=>{
 }).catch(() => {
 	console.log('Something wrong has happened')
 })
+
+/*
+Request
+*/
+
+url = 'https://jsonplaceholder.typicode.com/posts/'
+
+fetch(url)
+  .then(data => response.json())
+  .then(data => console.log(data))
