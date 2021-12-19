@@ -7,6 +7,9 @@ var uniqueArray = array.filter( function( elem, index, array ) {
 } );
 
 /*
+What filter() does: like map(), filter() iterates the array from left to right invoking a return function on each element. 
+The return value must be a Boolean indicating whether the element will be kept or dropped. 
+After all elements have been parsed, filter() returns a new array with all elements that returned true.
 
 */
 
