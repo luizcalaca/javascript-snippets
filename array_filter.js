@@ -1,3 +1,13 @@
+const ages = [3, 10, 18, 20, 21];
+
+function checkAge(age) {
+  return age > 20;
+}
+
+let result= ages.filter( (item) => {
+	return item > 18
+})
+
 /*
 Use filter() when: you need to remove unwanted elements based on some condition(s).
 */
