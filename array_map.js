@@ -1,14 +1,17 @@
-const paints = ['black', 'green','red']
-const name = 'color'
 
-function pluck(array, property) {
-    let newer = []
-    array.map((item) => {
-    	newer.push(property,item)
-    })
-    
-    return newer
-}
+var fahrenheit = [ 0, 32, 45, 50, 75, 80, 99, 120 ];
 
-const result = pluck(paints, name)
-console.log(Array.from(result))
+var celcius = fahrenheit.map( function( elem ) {
+    return Math.round( ( elem - 32 ) * 5 / 9 );
+} ); 
+
+
+/*
+
+*/
+
+array = [1,2,3,5,6,9,8]
+
+array.map( function( elem, index, array ) {
+    console.log(elem, index)
+});
