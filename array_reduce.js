@@ -5,6 +5,12 @@ array.reduce( function( prevVal, elem, index, array ) {
 }, initialValue );
 */
 
+/*
+What reduce() does: Like map(), reduce() iterates the array from left to right invoking a return function on each element. 
+The returned value is the accumulated value passed from callback to callback. After all elements have been evaluated, 
+reduce() returns the accumulated/concatenated value.
+*/
+
 var rockets = [
     { country:'Russia', launches:32 },
     { country:'US', launches:23 },
